@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/vtvternal"
+    android:paddingBottom="8dp"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/title_text"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="6dp"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="@string/title_fbk"
+        android:textColor="#000"
+        android:textSize="24sp" />
+
+
+    <EditText
+        android:id="@+id/key_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_below="@+id/title_text"
+        android:background="#fff"
+        android:ems="20"
+        android:hint="@string/hint_fbk"
+        android:inputType="none"
+        android:padding="6dp"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/description_text"
+        android:layout_below="@+id/key_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:padding="6dp"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:textSize="14dp"
+        android:text="Type or Paste a Vternal Key in the box and then proceed. Vternal keys are typically 64 character hexadecimal strings."/>
+
+    <ImageView
+        android:id="@+id/cancelbutton"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:adjustViewBounds="true"
+        android:layout_below="@+id/description_text"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginRight="6dp"
+        android:layout_toLeftOf="@+id/proceedbutton"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_close_black_48dp" />
+
+    <ImageView
+        android:id="@+id/proceedbutton"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_below="@+id/description_text"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="2dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_add_circle_outline_black_48dp" />
+
+</RelativeLayout>

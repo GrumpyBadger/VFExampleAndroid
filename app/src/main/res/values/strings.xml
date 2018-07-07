@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">VFExampleAndroid</string>
+    <string name="title_fbk">Find by Key</string>
+    <string name="hint_fbk">Enter a Vternal Key</string>
+</resources>
